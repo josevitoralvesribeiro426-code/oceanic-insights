@@ -36,7 +36,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const [open, setOpen] = useState(false);
-  const maps = "https://www.google.com/maps/search/?api=1&query=S%C3%B3nia%20Medina%20Est%C3%A9tica%20Avan%C3%A7ada%20%26%20Laser%2C%20Santar%C3%A9m%2C%20Portugal";
+  const maps = "https://www.google.com/maps/search/?api=1&query=S%C3%B3nia%20Medina%20Est%C3%A9tica%20Avan%C3%A7ada%20%26%20Laser&query_place_id=ChIJ6ZjVYA4zGQ0Rbmha0iVMN9Y";
   const phone = "tel:+351910042245";
 
   return (
@@ -49,6 +49,7 @@ function Index() {
         <nav className={open ? "nav-links open" : "nav-links"}>
           <a href="#tratamentos" onClick={() => setOpen(false)}>Tratamentos</a>
           <a href="#sobre" onClick={() => setOpen(false)}>Sobre</a>
+          <a href="#fotos" onClick={() => setOpen(false)}>Fotos & vídeos</a>
           <a href="#contactos" onClick={() => setOpen(false)}>Contactos</a>
           <a className="nav-cta" href={phone}>Agendar <Icon name="arrow" /></a>
         </nav>
@@ -104,6 +105,22 @@ function Index() {
           <p>Na Sónia Medina Estética Avançada & Laser, o foco está em proporcionar uma experiência de estética cuidada, profissional e personalizada, com recurso a tratamentos avançados.</p>
           <p>Localizado em Santarém, o espaço reúne protocolos de estética avançada, HIFU, peelings e depilação a laser.</p>
           <a className="text-link" href={phone}>Falar diretamente <Icon name="arrow" /></a>
+        </div>
+      </section>
+
+      <section id="fotos" className="section media-section">
+        <div className="section-heading">
+          <div><p className="eyebrow">GALERIA OFICIAL</p><h2>Fotos & vídeos<br /><em>no Google Maps.</em></h2></div>
+          <p>Veja diretamente no perfil da Sónia Medina as fotografias e vídeos publicados no Google Maps, sem perder a ligação à fonte original.</p>
+        </div>
+        <div className="media-panel">
+          <div className="media-tile media-photo"><span>FOTOS</span><strong>Conheça o espaço, os detalhes e os resultados publicados no perfil.</strong></div>
+          <div className="media-tile media-video"><span>VÍDEOS</span><strong>Veja os vídeos disponibilizados publicamente pela empresa e visitantes.</strong></div>
+          <div className="media-action">
+            <div className="media-icon">SM</div>
+            <p>Conteúdo oficial e atualizado no Google Maps.</p>
+            <a className="button button-dark" href={maps} target="_blank" rel="noreferrer">Abrir fotos & vídeos <Icon name="arrow" /></a>
+          </div>
         </div>
       </section>
 
