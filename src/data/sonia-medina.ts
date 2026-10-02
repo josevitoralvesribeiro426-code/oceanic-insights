@@ -1,0 +1,20 @@
+export const business = {
+  name: "Sónia Medina Estética Avançada & Laser",
+  category: "Esteticista",
+  address: "R. Fernão Teles de Meneses 30, 2005-133 Santarém, Portugal",
+  phone: "+351 910 042 245",
+  rating: 4.8,
+  reviewCount: 26,
+  placeId: "ChIJ6ZjVYA4zGQ0Rbmha0iVMN9Y",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=S%C3%B3nia%20Medina%20Est%C3%A9tica%20Avan%C3%A7ada%20%26%20Laser%2C%20Santar%C3%A9m%2C%20Portugal",
+  services: ["Estética avançada", "HIFU", "Peelings", "Depilação a laser"],
+  hours: {
+    monday: "10:00–20:00",
+    tuesday: "Não publicado",
+    wednesday: "10:00–20:00",
+    thursday: "10:00–20:00",
+    friday: "10:00–20:00",
+    saturday: "10:00–20:00",
+    sunday: "Não publicado",
+  },
+} as const;
